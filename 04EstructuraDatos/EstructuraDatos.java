@@ -10,7 +10,7 @@
  * 9.- Dibujitos                              *ya
  * 10.- Figura hueca                          *ya
  * 11.- Patrones                              *ya
- * 12.- Diamante                              *
+ * 12.- Diamante                              *ya
  * 13.- Calculadora                           *ya
  * 14.- Salir                                 *ya
  */
@@ -34,7 +34,8 @@ class EstructuraDatos {
             int factorial;
             factorial = 1;
         char letra;
-        String sexo,nombre;
+        String sexo;
+        String nombre;
         String binario = "";
         
 
@@ -65,7 +66,7 @@ class EstructuraDatos {
                 do{
                    
                     System.out.println("Digita tu nombre : "); 
-                    nombre = entrada.nextLine();  
+                    nombre = entrada.nextLine();
                     System.out.println("Digita tu edad : "); 
                     edad = entrada.nextInt(); 
                 
@@ -139,7 +140,6 @@ class EstructuraDatos {
 
                 case 3:
                      do{
-                         System.out.println("\t\tCONVERTIDOR"); 
                          System.out.println("\nLee las opciones y escoje la de tu agrado :");
                          System.out.println("1 Celsius"); 
                          System.out.println("2 Fahrenheit");
@@ -148,7 +148,6 @@ class EstructuraDatos {
                          op = entrada.nextInt(); 
                          switch(op){
                               case 1:
-                             System.out.println("\t\t CELSIUS"); 
                              System.out.println("\nLee las opciones y elije la de tu agrado : "); 
                              System.out.println(" 1 Celsius a Fahrenit"); 
                              System.out.println(" 2 Celsius a Kelvin"); 
@@ -182,7 +181,7 @@ class EstructuraDatos {
                                      break; 
                                   } 
                              case 2: 
-                                       System.out.println("\t\t FAHRENHEIT"); 
+
                                      System.out.println("Lee las opciones y escoje la de tu agrado : "); 
                                      System.out.println(" 1 Fahrenheit a Celsius"); 
                                      System.out.println(" 2 Fahrenheit a Kelvin "); 
@@ -217,7 +216,6 @@ class EstructuraDatos {
                                        }
                                         break; 
                              case 3: 
-                                     System.out.println("\t\t KELVIN"); 
                                      System.out.println("Lee las opciones y escoje la de tu agrado : "); 
                                      System.out.println(" 1 Kelvin a Celsius "); 
                                      System.out.println(" 2 Kelvin a Fahrenheit "); 
@@ -257,7 +255,6 @@ class EstructuraDatos {
 
 
                              case 4:
-                                      System.out.println("\t\t RANKIN"); 
                                       System.out.println("Lee las opciones y escoje la de tu agrado : "); 
                                       System.out.println("1 Rankin a Celsius "); 
                                       System.out.println("2 Rankin a Fahrenhein"); 
@@ -432,7 +429,7 @@ class EstructuraDatos {
                 break;
                 case 9:
                 do{
-                System.out.println("Dita el tamaño de la figura : "); 
+                System.out.println("Digita el tamaño del cuadrado : "); 
                 lado = entrada.nextInt(); 
                   for (int i=1; i<= lado; i++){
                   for (int j=1 ; j<=lado ; j++ ){
@@ -446,7 +443,7 @@ class EstructuraDatos {
                 break;
                 case 10:
                 do{
-                    System.out.println("ingrese el lado del cuadrado");
+                    System.out.println("ingrese el lado del cuadrado no mayor a 20");
                     t = entrada.nextInt();
                     if(t>=0 && t<=20){
                         
@@ -478,7 +475,6 @@ class EstructuraDatos {
                 break;
                 case 11:
                 do{
-                    System.out.println("\n\n\t\t PATRON "); 
                     System.out.println("\n\n ¿ Deseas desplegar el patron sorpresa ?");
                     System.out.println("1 si \n2 no "); 
                     op = entrada.nextInt(); 
@@ -499,6 +495,31 @@ class EstructuraDatos {
                       
                 break;
                 case 12:
+                do{
+                    for (int i = 1; i<=1 ; i++){
+                        System.out.println("\t   *** ");//3
+                        for(int j=1 ; j<= 1 ; j++){
+                            System.out.println("\t  *****");//5
+                            for(int y=1; y<=1; y++ ){
+                              System.out.println("\t *******");
+                              for( int z = 1; z<=1 ; z++){
+                                System.out.println("\t*********");
+                              }
+                              System.out.println("\t *******");   
+                            }
+                            System.out.println("\t  *****");
+                        }
+                        for(int x = 1; x <= 1 ; x++){
+                            System.out.println("\t  *****");
+                        }
+                        System.out.println("\t   ***");
+                        for(int z=1 ; z<=1; z++){
+                            System.out.println("\t    *");
+                        } 
+                    }
+                    System.out.println("Deseas repetir el programa, escribe s para si");
+                    letra = entrada.next().charAt(0);
+                }while(letra == 's' || letra == 'S' );
                 break;
                 case 13:
                 do{
