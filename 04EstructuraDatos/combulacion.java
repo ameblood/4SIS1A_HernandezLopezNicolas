@@ -65,7 +65,7 @@ public class combulacion{
             vector3[3] = (vector3[6]+vector3[7]+vector3[8]+vector3[9]);
             
             vector3[j] = (vector[1]*vector2[3]); 
-            j++
+            j++;
             vector3[j] = (vector[2]*vector2[2]); 
             j++;
             vector3[j] = (vector[3]+vector3[1]);

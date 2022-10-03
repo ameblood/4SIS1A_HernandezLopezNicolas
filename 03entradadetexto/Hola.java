@@ -1,5 +1,5 @@
 import java.util.Scanner;
-package 03entradadetexto;
+
 
 public class Hola {
         public static void main(String args[]){
@@ -10,4 +10,4 @@ public class Hola {
             System.out.println("hola "+nombre); 
         }
     }
-}
+
