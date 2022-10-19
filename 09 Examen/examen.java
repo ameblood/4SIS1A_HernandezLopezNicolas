@@ -26,9 +26,6 @@ public class examen {
             System.out.println(".length");
             System.out.print("\033[H\033[2J");
             System.out.flush();
-            
-           
-
             //aqui transforma la palabra en __
             int letratraspalabrasecreta = palabrasec.length();
             char []palabraguiones = new char[letratraspalabrasecreta];
