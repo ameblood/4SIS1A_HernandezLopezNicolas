@@ -55,7 +55,10 @@ public class Ventana extends JFrame {
         registroButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.exit(0);
+                    JOptionPane.showMessageDialog(null, "fue mucho para mi");
+                System.exit(5);
+            
+                
             }
         });
         mainPanel.add(registroButton);
@@ -87,7 +90,7 @@ public class Ventana extends JFrame {
                     }
 
                 } else {
-                    JOptionPane.showMessageDialog(null, "no te has registrado pendejo");
+                    JOptionPane.showMessageDialog(null, "no te has registrado UwU");
                 }
 
 
